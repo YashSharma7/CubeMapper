@@ -112,7 +112,7 @@ def equiToCube(f):
             for face in range(6):
                 imgOut = Image.new("RGB", (faceSize, faceSize), "black")
                 convertFace(imgIn, imgOut, face)
-                savePath = os.path.join(imgDirPath,"_" + FACE_NAMES[face])
+                savePath = os.path.join(imgDirPath,"__" + FACE_NAMES[face])
                 imgOut.save(savePath+"." + fileExt)
         imgIn.close()
 
